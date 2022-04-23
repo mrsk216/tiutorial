@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    display: flex;
+}
+
+.box-item {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+i {
+    font-size: 45px;
+    color: #ffb500;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+/* First box */
+
+.box-wapper1 {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 black;
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.box1 {
+    width: 100%;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    border-radius: 8px;
+    display: none;
+}
+
+.btn1 {
+    width: 80px;
+    background-color: #ffb500;
+    border: 1px solid #ffb500;
+    padding: 5px;
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background: none !important;
+    color: #ffb500;
+    border: 1px solid #ffb500;
+}
+
+.box-wapper1:hover .hover-box {
+    display: flex !important;
+}
+
+
+/* Second box */
+
+.box-wapper2 {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 black;
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.box-wapper2:hover {
+    background: #000;
+}
+
+.box2 {
+    z-index: -1;
+}
+
+.btn2 {
+    width: 80px;
+    background-color: #ffb500;
+    border: 1px solid #ffb500;
+    padding: 5px;
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.btn2:hover {
+    background: none !important;
+    color: #ffb500;
+    border: 1px solid #ffb500;
+}
+
+.box-wapper2:hover .btn2 {
+    display: block;
+}
