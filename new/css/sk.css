@@ -35,6 +35,19 @@ h4 {
     align-items: center;
     position: relative;
     cursor: pointer;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.services {
+    width: 500px;
+    height: 600px;
+    border: 1px solid
+}
+
+.services:hover .box-wapper1 {
+    transform: scaleY(1);
 }
 
 .box1 {
@@ -50,7 +63,11 @@ h4 {
     z-index: 1;
     background-color: black;
     border-radius: 8px;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
 }
 
 .btn1 {
@@ -61,6 +78,7 @@ h4 {
     border-radius: 7px;
     margin: auto;
     cursor: pointer;
+    transition: 1s;
 }
 
 .btn1:hover {
@@ -70,7 +88,7 @@ h4 {
 }
 
 .box-wapper1:hover .hover-box {
-    display: flex !important;
+    opacity: 1;
 }
 
 
